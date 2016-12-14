@@ -125,6 +125,13 @@ config TARGET_MX6UL_14X14_EVK
 	select DM_THERMAL
 	select SUPPORT_SPL
 
+config TARGET_MX6UL_WIRENBOARD
+	bool "mx6ul_wirenboard"
+	select MX6UL
+	select DM
+	select DM_THERMAL
+	select SUPPORT_SPL
+
 config TARGET_MX6UL_14X14_DDR3_ARM2
 	bool "mx6ul_14x14_ddr3_arm2"
 	select MX6UL
@@ -247,5 +254,7 @@ source "board/tqc/tqma6/Kconfig"
 source "board/udoo/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
+source "board/contactless/mx6ul_wirenboard/Kconfig"
+
 
 endif
